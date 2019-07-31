@@ -1,0 +1,27 @@
+<div class="header-background">
+    <div class="user">
+        <div class="header-image"><img mat-card-lg-image [src]="user.data.avatar" alt="Photo of user"></div>
+        <div class="name">{{user.data.first_name}} {{user.data.last_name}}</div>
+    </div>
+</div>
+<mat-card class="card">
+    <mat-card-content>
+        <div class="profile-box">
+            <div class="general-info">General Info</div>
+            <div class="content">
+                <div class="info-line">
+                    <div class="title">First name</div>
+                    <div class="info">{{ user.data.first_name }}</div>
+                </div>
+                <div class="info-line">
+                    <div class="title">Last name</div>
+                    <div class="info">{{ user.data.last_name }}</div>
+                </div>
+                <div class="info-line">
+                    <div class="title">E-mail</div>
+                    <div class="info">{{ user.data.email }}</div>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
